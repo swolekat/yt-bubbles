@@ -1,10 +1,13 @@
+// Chat badge images
 const ytSubscriberBadge = 'https://cdn.streamelements.com/uploads/e0ba34b9-d8fd-48d5-88ba-ab95e189064e.png';
 const ytVerifiedBadge = 'https://cdn.streamelements.com/uploads/b7a2bd4e-d6ab-4126-9b4e-d8f4c6ea91a1.png';
 const ytModBadge = 'https://cdn.streamelements.com/uploads/3f6a89a1-b37a-49d4-bd02-aad6e4c1b934.png';
 const ytBroadcasterBadge = 'https://cdn.streamelements.com/uploads/81ff9cb0-2198-46fd-b54f-f03ac9db26b4.png';
 
+// Membership colour
 const membershipColor = '#447821';
 
+// Custom colours for Super Chat tiers
 const tierToColorMap = {
     1: '#134A9E',
     2: '#4476FF',
@@ -15,8 +18,10 @@ const tierToColorMap = {
     7: '#E32524',
 };
 
+// Custom channel emoji
 const ytEmotes = {
-
+    // EXAMPLE ENTRY:
+    // ':_emojiName:': 'https://yt3.ggpht.com/IMAGE_ID_GOES_HERE=w500-500-c-k-nd',
     ':_tclDed:': 'https://yt3.ggpht.com/GPHoYCSnJnP5T3s7BOaWJ2JWicRekevPIMh8D9vDLYfu-bbT9PGtsIY7ZhOQl82n7cyyooyuQFw=w500-h500-c-k-nd',
     ':_tclFinland:': 'https://yt3.ggpht.com/cmRVrPZUBx2Kk3_npN0FuMr3TzJo9uYrC6GnGSP02cxVtyliJbuxiyFGys-T6tAuq8viXAxY=w500-h500-c-k-nd',
     ':_tclTrolled:': 'https://yt3.ggpht.com/lZMNvYcZBzPNwgN0SSeFSoliqlq-kfb2TSiVFu3oPTe9peu3GhbHeYdGxsI4VvWOSJqaRUaIITo=w500-h500-c-k-nd',
@@ -28,7 +33,7 @@ const ytEmotes = {
     ':_tclYouwhat:': 'https://yt3.ggpht.com/GK5rv_iWe2hs5HMd-B2uBv-IJIaWBMfG5GFtwJhpbeDZv8yyr2hR4juztQ1jTxcJCTMUrLuE=w500-h500-c-k-nd',
     ':_tclDeletthis:': 'https://yt3.ggpht.com/lzigH-ErN0co9uRWTig9xfkH6PG7dX_qo2PZRxpk3Ng6v3_vasPNiiGn2j1YpRrotFA4f9ejJQ=w500-h500-c-k-nd',
 
-    // standard emotes
+    // standard YouTube emotes
     ":hand-pink-waving:": "https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w500-h500-c-k-nd",
     ":face-blue-smiling:": "https://yt3.ggpht.com/cktIaPxFwnrPwn-alHvnvedHLUJwbHi8HCK3AgbHpphrMAW99qw0bDfxuZagSY5ieE9BBrA=w500-h500-c-k-nd",
     ":face-red-droopy-eyes:": "https://yt3.ggpht.com/oih9s26MOYPWC_uL6tgaeOlXSGBv8MMoDrWzBt-80nEiVSL9nClgnuzUAKqkU9_TWygF6CI=w500-h500-c-k-nd",
@@ -1354,13 +1359,13 @@ function joinIfArray(possibleArray, delimiter = '') {
     return possibleArray
 }
 
+// Custom test messages
 const TEST_MESSAGES = [
     ['This is a long message'],
     ['uwu'],
     [':yt:'],
     [':yt::yt:'],
     [':yt::yt::yt::yt::yt::yt:'],
-    [':_tclDed: :_tclFinland: :_tclTrolled: :_tclPog: :_tclAAAA: :_tclBunkisser: :_tclItsfine: :_tclThisisfine: :_tclYouwhat: :_tclDeletthis:'],
 ]
 
 function htmlEncode(text) {
