@@ -554,6 +554,24 @@ async function onMessage(event, testMessage = false) {
             text = `${displayMessage} They are a member at ${memberLevelName} level.`;
             customBorderColor = membershipColor;
         }
+        if(type === 'membershipGiftingEvent'){
+            const {membershipGiftingDetails} = snippet;
+            const {giftMembershipsCount, giftMembershipsLevelName} = membershipGiftingDetails || {};
+            text = `${displayName} is gifting ${giftMembershipsCount} members at the ${giftMembershipsLevelName} level!`;
+            customBorderColor = membershipColor;
+        }
+        if(type === 'giftMembershipReceivedEvent'){
+            const {displayMessage} = snippet;
+            text = displayMessage;
+            customBorderColor = membershipColor;
+        }
+        // like resub on twitch
+        if(type === 'memberMilestoneChatEvent'){
+            const {memberMilestoneChatDetails} = snippet;
+            const {memberLevelName, memberMonth} = memberMilestoneChatDetails || {};
+            text = `${displayName} celebrates ${memberMonth} months of membership! They are a member of ${memberLevelName}!`;
+            customBorderColor = membershipColor;
+        }
     }
 
     // Filters
